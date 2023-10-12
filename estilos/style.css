@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header {
+    width: 100%;
+    height: 100px;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    
+
+} */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.boni{
+    width: 75px;
+    height: 75px;
+}
+main {
+    width: 100%;
+    height: auto;
+    /* background-image: url(../imagenes/fondo.jpg);*/
+}
+main h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+main p{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-size: 25px;
+}
+main article .remera{
+    grid-area: remera;
+}
+main article .pantalon{
+    grid-area:pantalon;
+}
+main article .buzo{
+    grid-area:buzo;
+}
+main article .zapa{
+    grid-area:zapa;
+}
+main article .botines{
+    grid-area:botines;
+}
+main article .camperas{
+    grid-area:camperas;
+}
+main article section{
+    width:400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "remera pantalon buzo"
+    "zapa botines camperas"
+    ;
+    justify-items: center;
+} 
+
+
+
+main article section a img{
+    width: 300px;
+    height: 300px;
+}
+li{
+    margin: 20px;
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+h1 ,h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+footer{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+}
+footer .mapa{
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+}
+footer article div{
+    display: flex;
+    
+}
+footer article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 50px;
+    grid-template-areas: 
+    "twitter twitter facebook facebook"
+    "instagram gmail gmail whatsapp";
+}
+.twitter{
+    grid-area:twitter;
+    justify-content: center}
+.facebook{
+    grid-area: facebook;
+    justify-content: center
+}
+.instagram{
+    grid-area: instagram;
+    justify-content: center
+}
+.gmail{
+    grid-area: gmail;
+justify-content: center;
+}
+.whatsapp{
+    grid-area: whatsapp;
+    justify-content: center
+}
+footer article div p a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.747);
+
+}
+footer p{
+    display:flex;
+    align-items: center;
+}
+footer article div img{
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+.reme article section{
+    display: flex;
+}
+.reme article .juve{
+    grid-area: juve;
+}
+.reme article .united{
+    grid-area: united;
+}
+.reme article .liver{
+    grid-area: liver;
+}
+.reme article .city{
+    grid-area: city;
+}
+.reme article .madrid{
+    grid-area: madrid;
+}
+.reme article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "juve"
+    "united"
+    "liver"
+    "city"
+    "madrid";
+}
+main article section .j1{
+    grid-area: j1;
+}
+main article section .j2{
+    grid-area: j2;
+}
+main article section .j3{
+    grid-area: j3;
+}
+main article section .j4{
+    grid-area: j4;
+}
+main article .juve{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "j1 j2 j3 j4" ;
+}
+main article section .u1{
+    grid-area: u1;
+}
+main article section .u2{
+    grid-area: u2;
+}
+main article section .u3{
+    grid-area: u3;
+}
+main article section .u4{
+    grid-area: u4;
+}
+main article .united{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "u1 u2 u3 u4" ;
+}
+main article section .l1{
+    grid-area: l1;
+}
+main article section .l2{
+    grid-area: l2;
+}
+main article section .l3{
+    grid-area: l3;
+}
+main article section .l4{
+    grid-area: l4;
+}
+main article .liver{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "l1 l2 l3 l4" ;
+}
+main article section .c1{
+    grid-area: c1;
+}
+main article section .c2{
+    grid-area: c2;
+}
+main article section .c3{
+    grid-area: c3;
+}
+main article section .c4{
+    grid-area: c4;
+}
+main article .city{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "c1 c2 c3 c4" ;
+}
+main article section .m1{
+    grid-area: m1;
+}
+main article section .m2{
+    grid-area: m2;
+}
+main article section .m3{
+    grid-area: m3;
+}
+main article section .m4{
+    grid-area: m4;
+}
+main article .madrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "m1 m2 m3 m4" ;
+}
+.reme article section div img{
+    width: 300px;
+    height: 300px;
+}
+
+@media (max-width:1024px){
+main article{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "remera pantalon" 
+    "buzo zapa" 
+    "botines camperas"
+    ;
+}
+}
+@media (max-width:768px){
+    main article section{
+        width: 300px;
+    }
+    main article section img{
+        width: 250px;
+        height: 250px;
+    }
+    }
+
+    @media (max-width:425px){
+        main h1{
+            font-size: 35px;
+        }
+        main p{
+            font-size: 20px;
+        }
+        main article{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "remera"
+            "pantalon"
+            "buzo"
+            "zapa"
+            "botines"
+            "camperas"
+            ;
+        }
+        main article section{
+            width: 300px;
+            height: 250px;
+        }
+        main article section a img{
+            width: 250px;
+            height: 200px;
+        }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+    footer article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "twitter"
+        "facebook"
+        "instagram"
+        "gmail"
+        "whatsapp"
+        ;
+        margin: 2px;
+    }
+    footer article div{
+        padding: 3px;
+    }
+    footer article div a img{
+        padding: 0px;
+        margin: 0px;
+    }
+    footer .mapa{
+        width: 250px;
+        height: 250px;
+    }
+    }
